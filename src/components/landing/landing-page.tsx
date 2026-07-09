@@ -299,8 +299,8 @@ export default function LandingPage() {
                 <Button
                   variant="outline"
                   size="lg"
-                  style={{ color: 'white', borderColor: 'rgba(255,255,255,0.4)' }}
-                  className="hover:bg-white/10 hover:text-white px-8 h-12 text-base backdrop-blur-sm"
+                  style={{ color: 'white', borderColor: 'rgba(255,255,255,0.5)', backgroundColor: 'transparent' }}
+                  className="hover:bg-white/15 px-8 h-12 text-base backdrop-blur-sm"
                   onClick={handleLogin}
                 >
                   ডেমো দেখুন
