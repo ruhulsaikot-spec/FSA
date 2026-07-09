@@ -161,14 +161,7 @@ export function AppSidebar() {
                 <span>প্রস্থান</span>
               </SidebarMenuButton>
             </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton
-                onClick={toggleSidebar}
-                tooltip="সঙ্কুচিত করুন"
-              >
-                <ChevronLeft className="size-4" />
-                <span>সঙ্কুচিত করুন</span>
-              </SidebarMenuButton>
+            <SidebarMenuItem>              
             </SidebarMenuItem>
           </SidebarMenu>
         </SidebarFooter>
