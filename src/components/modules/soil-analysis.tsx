@@ -68,7 +68,7 @@ const maxNPK = 60
 
 export function SoilAnalysis() {
   return (
-    <div className="space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-[1600px] mx-auto">
       {/* Page Header */}
       <div>
         <h1 className="text-2xl font-bold text-foreground">মাটির তথ্য বিশ্লেষণ</h1>

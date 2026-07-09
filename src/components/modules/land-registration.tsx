@@ -99,7 +99,7 @@ export function LandRegistration() {
 
   if (submitted) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
+      <div className="flex items-center justify-center min-h-[60vh] p-4">
         <Card className="max-w-md w-full text-center p-8">
           <div className="mx-auto h-20 w-20 rounded-full bg-green-100 flex items-center justify-center mb-4">
             <CheckCircle2 className="h-10 w-10 text-green-600" />
@@ -125,7 +125,7 @@ export function LandRegistration() {
   }
 
   return (
-    <div className="space-y-6 max-w-3xl mx-auto">
+    <div className="p-4 md:p-6 space-y-6 max-w-3xl mx-auto">
       {/* Page Header */}
       <div className="flex items-center gap-3">
         <Button

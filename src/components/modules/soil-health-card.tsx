@@ -87,7 +87,7 @@ export function SoilHealthCard() {
         : 'bg-red-50'
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="p-4 md:p-6 max-w-3xl mx-auto">
       <Card className="rounded-2xl shadow-lg border-2 border-green-200 overflow-hidden">
         {/* Green Government Header */}
         <div className="bg-gradient-to-r from-green-700 to-green-600 px-6 py-5 text-center">

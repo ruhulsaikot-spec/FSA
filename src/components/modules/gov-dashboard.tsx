@@ -139,7 +139,7 @@ const maxYield = Math.max(
 
 export function GovDashboard() {
   return (
-    <div className="space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-[1600px] mx-auto">
       {/* Header */}
       <Card className="border-green-200 dark:border-green-900/50 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30">
         <CardHeader>

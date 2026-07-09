@@ -69,6 +69,7 @@ export function AIChat() {
   };
 
   return (
+    <div className="p-4 md:p-6 max-w-[1600px] mx-auto">
     <Card className="flex w-full flex-col">
       <CardHeader className="pb-3">
         <CardTitle className="flex items-center justify-between text-xl font-bold">
@@ -184,5 +185,6 @@ export function AIChat() {
         </div>
       </CardContent>
     </Card>
+    </div>
   );
 }

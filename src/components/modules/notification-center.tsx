@@ -92,7 +92,7 @@ export function NotificationCenter() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="p-4 md:p-6 space-y-4 max-w-[1600px] mx-auto">
       <Card>
         <CardHeader className="flex flex-row items-center justify-between pb-3">
           <div className="flex items-center gap-3">

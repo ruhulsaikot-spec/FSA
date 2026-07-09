@@ -69,6 +69,7 @@ export function IoTManagement() {
   const offlineDevices = totalDevices - activeDevices;
 
   return (
+    <div className="p-4 md:p-6 max-w-[1600px] mx-auto">
     <Card className="w-full">
       <CardHeader className="flex flex-row items-center justify-between pb-4">
         <CardTitle className="flex items-center gap-2 text-xl font-bold">
@@ -201,5 +202,6 @@ export function IoTManagement() {
         </div>
       </CardContent>
     </Card>
+    </div>
   );
 }

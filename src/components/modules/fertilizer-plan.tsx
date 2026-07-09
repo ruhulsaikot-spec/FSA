@@ -17,7 +17,7 @@ export function FertilizerPlan() {
   const totalCost = '৳১২,৫০০';
 
   return (
-    <section className="space-y-4">
+    <section className="p-4 md:p-6 space-y-4 max-w-[1600px] mx-auto">
       <div className="space-y-1">
         <h2 className="text-2xl font-bold tracking-tight flex items-center gap-2">
           <FlaskConical className="size-6 text-emerald-600" />

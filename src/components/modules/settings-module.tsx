@@ -102,7 +102,7 @@ export function SettingsModule() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="p-4 md:p-6 space-y-6 max-w-[1600px] mx-auto">
       {/* Header */}
       <Card>
         <CardHeader>
@@ -347,7 +347,7 @@ export function SettingsModule() {
                 আপনার পাসওয়ার্ড পরিবর্তন ও নিরাপত্তা সেটিংস পরিচালনা করুন
               </p>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="p-4 md:p-6 space-y-6 max-w-[1600px] mx-auto">
               {/* Password Change */}
               <div className="space-y-4">
                 <h4 className="font-medium text-sm text-muted-foreground uppercase tracking-wide">
