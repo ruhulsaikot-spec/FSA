@@ -29,7 +29,7 @@ export const kpiData = [
     icon: 'HeartPulse',
   },
   {
-    label: 'খামার হেলথ',
+    label: 'জমি হেলথ',
     value: 'ভালো',
     change: 'স্থিতিশীল',
     changeType: 'up' as const,
@@ -685,7 +685,7 @@ export const calendarTasks = [
 export const farms = [
   {
     id: 'farm-001',
-    name: 'মূল খামার — উত্তর পাড়া',
+    name: 'মূল জমি — উত্তর পাড়া',
     location: 'গ্রাম: চাঁদপুর, উপজেলা: গাজীপুর, জেলা: ঢাকা',
     area: 5.5,
     areaUnit: 'বিঘা',
@@ -699,7 +699,7 @@ export const farms = [
   },
   {
     id: 'farm-002',
-    name: 'দক্ষিণ খামার — বিলের ধার',
+    name: 'দক্ষিণ জমি — বিলের ধার',
     location: 'গ্রাম: নলডাঙ্গা, উপজেলা: কালীগঞ্জ, জেলা: গাজীপুর',
     area: 4.0,
     areaUnit: 'বিঘা',
@@ -745,7 +745,7 @@ export const iotDevices = [
   },
   {
     id: 'iot-002',
-    name: 'আবহাওয়া স্টেশন (মূল খামার)',
+    name: 'আবহাওয়া স্টেশন (মূল জমি)',
     type: 'আবহাওয়া স্টেশন',
     status: 'online' as const,
     battery: 95,
@@ -804,7 +804,7 @@ export const notifications = [
   {
     id: 'notif-003',
     title: 'মাটির পরীক্ষা রিপোর্ট প্রস্তুত',
-    message: 'আপনার মূল খামারের মাটি পরীক্ষার রিপোর্ট প্রস্তুত হয়েছে। স্বাস্থ্য স্কোর ৭৮/১০০। বোরনের অভাব ও জৈব পদার্থের ঘাটতি চিহ্নিত হয়েছে।',
+    message: 'আপনার মূল জমিের মাটি পরীক্ষার রিপোর্ট প্রস্তুত হয়েছে। স্বাস্থ্য স্কোর ৭৮/১০০। বোরনের অভাব ও জৈব পদার্থের ঘাটতি চিহ্নিত হয়েছে।',
     type: 'info' as const,
     time: '৫ ঘন্টা আগে',
     read: true,
@@ -892,9 +892,10 @@ export const chatMessages = [
 // -------------------------------------------------------
 export const navItems = [
   { id: 'dashboard', label: 'ড্যাশবোর্ড', icon: 'LayoutDashboard', view: 'dashboard', group: 'প্রধান' },
-  { id: 'my-farms', label: 'আমার খামার', icon: 'MapPin', view: 'farm', group: 'খামার ও জমি' },
-  { id: 'land-registration', label: 'জমি নিবন্ধন', icon: 'Leaf', view: 'land-register', group: 'খামার ও জমি' },
-  { id: 'soil-info', label: 'মাটির তথ্য', icon: 'TestTube2', view: 'soil', group: 'মাটি বিশ্লেষণ' },
+  { id: 'my-farms', label: 'আমার জমি', icon: 'MapPin', view: 'farm', group: 'জমি ও জমি' },
+  { id: 'land-registration', label: 'জমি নিবন্ধন', icon: 'Leaf', view: 'land-register', group: 'জমি ও জমি' },
+  { id: 'soil-info', label: 'মাটির স্বাস্থ্য', icon: 'TestTube2', view: 'soil', group: 'মাটি বিশ্লেষণ' },
+  { id: 'soil-timeline', label: 'মাটির স্বাস্থ্য টাইমলাইন', icon: 'History', view: 'soil-timeline', group: 'মাটি বিশ্লেষণ' },
   { id: 'soil-health-card', label: 'মাটির হেলথ কার্ড', icon: 'HeartPulse', view: 'soil-health-card', group: 'মাটি বিশ্লেষণ' },
   { id: 'soil-problems', label: 'মাটির সমস্যা', icon: 'AlertTriangle', view: 'soil-problem', group: 'মাটি বিশ্লেষণ' },
   { id: 'iot-devices', label: 'IoT ডিভাইস', icon: 'Wifi', view: 'iot', group: 'প্রযুক্তি' },
@@ -910,7 +911,13 @@ export const navItems = [
   { id: 'ai-assistant', label: 'AI সহকারী', icon: 'MessageSquare', view: 'chat', group: 'সরঞ্জাম' },
   { id: 'notification', label: 'নোটিফিকেশন', icon: 'Bell', view: 'notification', group: 'সরঞ্জাম' },
   { id: 'reports', label: 'রিপোর্ট', icon: 'FileBarChart2', view: 'report', group: 'সরঞ্জাম' },
-  { id: 'gov-dashboard', label: 'সরকারি ড্যাশবোর্ড', icon: 'Building2', view: 'gov-dashboard', group: 'প্রশাসন' },
+  { id: 'gov-dashboard', label: 'প্রশাসনিক ড্যাশবোর্ড', icon: 'Building2', view: 'gov-dashboard', group: 'প্রশাসন' },
+  { id: 'gov-gis', label: 'GIS মানচিত্র', icon: 'Globe', view: 'gov-gis', group: 'প্রশাসন' },
+  { id: 'crop-history', label: 'ফসলের ইতিহাস', icon: 'History', view: 'crop-history', group: 'বিশ্লেষণ' },
+  { id: 'yield-gap', label: 'উৎপাদন ব্যবধান', icon: 'BarChart3', view: 'yield-gap', group: 'বিশ্লেষণ' },
+  { id: 'regional-agri', label: 'আঞ্চলিক কৃষি অবস্থা', icon: 'Globe', view: 'regional-agri', group: 'বিশ্লেষণ' },
+  { id: 'crop-planning', label: 'মৌসুমভিত্তিক ফসল পরিকল্পনা', icon: 'CalendarDays', view: 'crop-planning', group: 'AI ও পরামর্শ' },
+  { id: 'crop-rotation', label: 'ফসল রোটেশন বুদ্ধিমত্তা', icon: 'Sprout', view: 'crop-rotation', group: 'AI ও পরামর্শ' },
   { id: 'settings', label: 'সেটিংস', icon: 'Settings', view: 'settings', group: 'প্রশাসন' },
 ];
 

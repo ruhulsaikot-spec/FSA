@@ -149,7 +149,7 @@ export function GovDashboard() {
             </div>
             <div>
               <CardTitle className="text-2xl font-bold text-green-900 dark:text-green-100">
-                সরকারি ড্যাশবোর্ড
+                প্রশাসনিক ড্যাশবোর্ড
               </CardTitle>
               <p className="text-green-700 dark:text-green-300 font-medium mt-0.5">
                 গণপ্রজাতন্ত্রী বাংলাদেশ

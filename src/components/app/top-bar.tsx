@@ -17,7 +17,7 @@ import { useAppStore, type AppView } from '@/lib/store'
 
 const viewNameMap: Record<string, string> = {
   dashboard: 'ড্যাশবোর্ড',
-  farm: 'খামার ব্যবস্থাপনা',
+  farm: 'জমি ব্যবস্থাপনা',
   'land-register': 'জমি নিবন্ধন',
   soil: 'মাটি বিশ্লেষণ',
   'soil-health-card': 'মাটি স্বাস্থ্য কার্ড',
@@ -35,7 +35,11 @@ const viewNameMap: Record<string, string> = {
   iot: 'আইওটি ব্যবস্থাপনা',
   notification: 'বিজ্ঞপ্তি কেন্দ্র',
   report: 'প্রতিবেদন কেন্দ্র',
-  'gov-dashboard': 'সরকারি ড্যাশবোর্ড',
+  'gov-dashboard': 'প্রশাসনিক ড্যাশবোর্ড',
+  'gov-gis': 'GIS মানচিত্র',
+  'crop-history': 'ফসলের ইতিহাস',
+  'yield-gap': 'উৎপাদন ব্যবধান বিশ্লেষণ',
+  'crop-detail': 'ফসল বিস্তারিত',
   settings: 'সেটিংস',
 }
 

@@ -28,7 +28,15 @@ const IoTManagement = dynamic(() => import('@/components/modules/iot-management'
 const NotificationCenter = dynamic(() => import('@/components/modules/notification-center').then(m => ({ default: m.NotificationCenter })), { ssr: false })
 const ReportCenter = dynamic(() => import('@/components/modules/report-center').then(m => ({ default: m.ReportCenter })), { ssr: false })
 const GovDashboard = dynamic(() => import('@/components/modules/gov-dashboard').then(m => ({ default: m.GovDashboard })), { ssr: false })
+const GovGISDashboard = dynamic(() => import('@/components/modules/gov-gis-dashboard').then(m => ({ default: m.GovGISDashboard })), { ssr: false })
+const CropHistory = dynamic(() => import('@/components/modules/crop-history').then(m => ({ default: m.CropHistory })), { ssr: false })
+const YieldGapAnalysis = dynamic(() => import('@/components/modules/yield-gap-analysis').then(m => ({ default: m.YieldGapAnalysis })), { ssr: false })
+const CropDetailIntelligence = dynamic(() => import('@/components/modules/crop-detail-intelligence').then(m => ({ default: m.CropDetailIntelligence })), { ssr: false })
 const SettingsModule = dynamic(() => import('@/components/modules/settings-module').then(m => ({ default: m.SettingsModule })), { ssr: false })
+const SoilHealthTimeline = dynamic(() => import('@/components/modules/soil-health-timeline').then(m => ({ default: m.SoilHealthTimeline })), { ssr: false })
+const RegionalAgriIntelligence = dynamic(() => import('@/components/modules/regional-agri-intelligence').then(m => ({ default: m.RegionalAgriIntelligence })), { ssr: false })
+const CropPlanning = dynamic(() => import('@/components/modules/crop-planning').then(m => ({ default: m.CropPlanning })), { ssr: false })
+const CropRotationIntelligence = dynamic(() => import('@/components/modules/crop-rotation-intelligence').then(m => ({ default: m.CropRotationIntelligence })), { ssr: false })
 
 function ModuleRouter() {
   const currentView = useAppStore((s) => s.currentView)
@@ -74,8 +82,24 @@ function ModuleRouter() {
       return <ReportCenter />
     case 'gov-dashboard':
       return <GovDashboard />
+    case 'gov-gis':
+      return <GovGISDashboard />
+    case 'crop-history':
+      return <CropHistory />
+    case 'yield-gap':
+      return <YieldGapAnalysis />
+    case 'crop-detail':
+      return <CropDetailIntelligence />
     case 'settings':
       return <SettingsModule />
+    case 'soil-timeline':
+      return <SoilHealthTimeline />
+    case 'regional-agri':
+      return <RegionalAgriIntelligence />
+    case 'crop-planning':
+      return <CropPlanning />
+    case 'crop-rotation':
+      return <CropRotationIntelligence />
     default:
       return <DashboardView />
   }

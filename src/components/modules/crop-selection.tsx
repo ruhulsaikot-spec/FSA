@@ -1,6 +1,7 @@
 'use client';
 
 import { cropSuggestions } from '@/lib/mock-data';
+import { useAppStore } from '@/lib/store';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -40,6 +41,7 @@ function getRiskBadgeClass(risk: string): string {
 }
 
 export function CropSelection() {
+  const { setView } = useAppStore();
   return (
     <section className="p-4 md:p-6 space-y-4 max-w-[1600px] mx-auto">
       <div className="space-y-1">
@@ -159,9 +161,9 @@ export function CropSelection() {
               </div>
 
               {/* Action button */}
-              <Button className="w-full" size="sm">
+              <Button className="w-full" size="sm" onClick={() => setView('crop-detail')}>
                 <Sprout className="size-4" />
-                নির্বাচন করুন
+                বিস্তারিত দেখুন
               </Button>
             </CardContent>
           </Card>

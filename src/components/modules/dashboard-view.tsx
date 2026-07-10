@@ -155,7 +155,7 @@ export function DashboardView() {
               আজ ৯ জুলাই ২০২৬, বুধবার
             </p>
             <p className="text-green-50/80 text-xs md:text-sm mt-2 max-w-xl leading-relaxed">
-              🌾 আপনার খামারের সামগ্রিক স্বাস্থ্য <span className="font-semibold text-white">ভালো</span>। মাটির হেলথ স্কোর বৃদ্ধি পাচ্ছে এবং এই মৌসুমে ফলনের সম্ভাবনা অত্যন্ত ইতিবাচক।
+              🌾 আপনার জমিের সামগ্রিক স্বাস্থ্য <span className="font-semibold text-white">ভালো</span>। মাটির হেলথ স্কোর বৃদ্ধি পাচ্ছে এবং এই মৌসুমে ফলনের সম্ভাবনা অত্যন্ত ইতিবাচক।
             </p>
           </div>
           <div className="hidden md:flex items-center gap-3">

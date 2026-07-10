@@ -11,7 +11,7 @@ Work Log:
 - Landing Page (664 lines) — Hero, Features, How It Works, Stats, Testimonials, CTA, Footer
 - App Shell — SidebarProvider + Sidebar (grouped nav, icon map) + TopBar (glass effect, breadcrumbs, search, notifications, user menu)
 - ড্যাশবোর্ড (30K) — Welcome banner, 4 KPI cards, Soil health circle, Tasks, Weather, AI recommend, IoT, Irrigation, Yield, Alerts
-- খামার ব্যবস্থাপনা — Farm cards grid, stats bar
+- জমি ব্যবস্থাপনা — Farm cards grid, stats bar
 - জমি নিবন্ধন — 3-step wizard form
 - মাটি বিশ্লেষণ — 4 tabs (মূল পরামাণ, পুষ্টি, অণুপুষ্টি, ট্রেন্ড)
 - মাটি স্বাস্থ্য কার্ড — Government-style card with all parameters
@@ -29,7 +29,7 @@ Work Log:
 - IoT ব্যবস্থাপনা — Device cards with battery/signal
 - নোটিফিকেশন — Filterable notification center
 - রিপোর্ট কেন্দ্র — 8 report types, download options
-- সরকারি ড্যাশবোর্ড — KPI, yield analysis, district table
+- প্রশাসনিক ড্যাশবোর্ড — KPI, yield analysis, district table
 - সেটিংস — 5 tabs (Profile, Notifications, Language, Security, Display)
 - Agent Browser দিয়ে যাচাই: Landing page, Dashboard, Soil Analysis, Crop Selection, AI Chat, Gov Dashboard, Mobile responsive
 - ESLint: zero errors, Console: zero errors

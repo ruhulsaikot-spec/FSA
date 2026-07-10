@@ -113,7 +113,7 @@ export function LandRegistration() {
           </p>
           <div className="flex gap-3 justify-center">
             <Button variant="outline" onClick={() => setView('farm')}>
-              খামার তালিকায় যান
+              জমি তালিকায় যান
             </Button>
             <Button className="bg-green-600 hover:bg-green-700" onClick={() => setSubmitted(false)}>
               আরেকটি জমি যোগ করুন
@@ -203,7 +203,7 @@ export function LandRegistration() {
                   <Label htmlFor="name">জমির নাম <span className="text-red-500">*</span></Label>
                   <Input
                     id="name"
-                    placeholder="যেমন: উত্তর পাড়ার খামার"
+                    placeholder="যেমন: উত্তর পাড়ার জমি"
                     value={formData.name}
                     onChange={(e) => updateField('name', e.target.value)}
                     className="mt-1.5"

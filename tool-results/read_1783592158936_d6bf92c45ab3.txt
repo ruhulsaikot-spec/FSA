@@ -29,7 +29,7 @@
     29→    icon: 'HeartPulse',
     30→  },
     31→  {
-    32→    label: 'খামার হেলথ',
+    32→    label: 'জমি হেলথ',
     33→    value: 'ভালো',
     34→    change: 'স্থিতিশীল',
     35→    changeType: 'up' as const,
@@ -685,7 +685,7 @@
    685→export const farms = [
    686→  {
    687→    id: 'farm-001',
-   688→    name: 'মূল খামার — উত্তর পাড়া',
+   688→    name: 'মূল জমি — উত্তর পাড়া',
    689→    location: 'গ্রাম: চাঁদপুর, উপজেলা: গাজীপুর, জেলা: ঢাকা',
    690→    area: 5.5,
    691→    areaUnit: 'বিঘা',
@@ -699,7 +699,7 @@
    699→  },
    700→  {
    701→    id: 'farm-002',
-   702→    name: 'দক্ষিণ খামার — বিলের ধার',
+   702→    name: 'দক্ষিণ জমি — বিলের ধার',
    703→    location: 'গ্রাম: নলডাঙ্গা, উপজেলা: কালীগঞ্জ, জেলা: গাজীপুর',
    704→    area: 4.0,
    705→    areaUnit: 'বিঘা',
@@ -745,7 +745,7 @@
    745→  },
    746→  {
    747→    id: 'iot-002',
-   748→    name: 'আবহাওয়া স্টেশন (মূল খামার)',
+   748→    name: 'আবহাওয়া স্টেশন (মূল জমি)',
    749→    type: 'আবহাওয়া স্টেশন',
    750→    status: 'online' as const,
    751→    battery: 95,
@@ -804,7 +804,7 @@
    804→  {
    805→    id: 'notif-003',
    806→    title: 'মাটির পরীক্ষা রিপোর্ট প্রস্তুত',
-   807→    message: 'আপনার মূল খামারের মাটি পরীক্ষার রিপোর্ট প্রস্তুত হয়েছে। স্বাস্থ্য স্কোর ৭৮/১০০। বোরনের অভাব ও জৈব পদার্থের ঘাটতি চিহ্নিত হয়েছে।',
+   807→    message: 'আপনার মূল জমিের মাটি পরীক্ষার রিপোর্ট প্রস্তুত হয়েছে। স্বাস্থ্য স্কোর ৭৮/১০০। বোরনের অভাব ও জৈব পদার্থের ঘাটতি চিহ্নিত হয়েছে।',
    808→    type: 'info' as const,
    809→    time: '৫ ঘন্টা আগে',
    810→    read: true,
@@ -892,8 +892,8 @@
    892→// -------------------------------------------------------
    893→export const navItems = [
    894→  { id: 'dashboard', label: 'ড্যাশবোর্ড', icon: 'LayoutDashboard', view: 'dashboard', group: 'প্রধান' },
-   895→  { id: 'my-farms', label: 'আমার খামার', icon: 'MapPin', view: 'farm', group: 'খামার ও জমি' },
-   896→  { id: 'land-registration', label: 'জমি নিবন্ধন', icon: 'Leaf', view: 'land-register', group: 'খামার ও জমি' },
+   895→  { id: 'my-farms', label: 'আমার জমি', icon: 'MapPin', view: 'farm', group: 'জমি ও জমি' },
+   896→  { id: 'land-registration', label: 'জমি নিবন্ধন', icon: 'Leaf', view: 'land-register', group: 'জমি ও জমি' },
    897→  { id: 'soil-info', label: 'মাটির তথ্য', icon: 'TestTube2', view: 'soil', group: 'মাটি বিশ্লেষণ' },
    898→  { id: 'soil-health-card', label: 'মাটির হেলথ কার্ড', icon: 'HeartPulse', view: 'soil-health-card', group: 'মাটি বিশ্লেষণ' },
    899→  { id: 'soil-problems', label: 'মাটির সমস্যা', icon: 'AlertTriangle', view: 'soil-problem', group: 'মাটি বিশ্লেষণ' },
@@ -910,7 +910,7 @@
    910→  { id: 'ai-assistant', label: 'AI সহকারী', icon: 'MessageSquare', view: 'chat', group: 'সরঞ্জাম' },
    911→  { id: 'notification', label: 'নোটিফিকেশন', icon: 'Bell', view: 'notification', group: 'সরঞ্জাম' },
    912→  { id: 'reports', label: 'রিপোর্ট', icon: 'FileBarChart2', view: 'report', group: 'সরঞ্জাম' },
-   913→  { id: 'gov-dashboard', label: 'সরকারি ড্যাশবোর্ড', icon: 'Building2', view: 'gov-dashboard', group: 'প্রশাসন' },
+   913→  { id: 'gov-dashboard', label: 'প্রশাসনিক ড্যাশবোর্ড', icon: 'Building2', view: 'gov-dashboard', group: 'প্রশাসন' },
    914→  { id: 'settings', label: 'সেটিংস', icon: 'Settings', view: 'settings', group: 'প্রশাসন' },
    915→];
    916→

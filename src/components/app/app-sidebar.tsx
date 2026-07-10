@@ -40,6 +40,9 @@ import {
   LayoutDashboard,
   MapPin,
   Leaf,
+  Globe,
+  History,
+  BarChart3,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
@@ -67,6 +70,9 @@ const iconMap: Record<string, LucideIcon> = {
   LayoutDashboard,
   MapPin,
   Leaf,
+  Globe,
+  History,
+  BarChart3,
 }
 
 const roleLabels: Record<string, string> = {

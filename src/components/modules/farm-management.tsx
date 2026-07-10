@@ -44,9 +44,9 @@ export function FarmManagement() {
       {/* Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">আমার খামার</h1>
+          <h1 className="text-2xl font-bold text-foreground">আমার জমি</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            আপনার সকল খামারের তথ্য ও অবস্থা দেখুন
+            আপনার সকল জমির তথ্য ও অবস্থা দেখুন
           </p>
         </div>
         <Button
@@ -54,7 +54,7 @@ export function FarmManagement() {
           className="bg-green-600 hover:bg-green-700 text-white"
         >
           <Plus className="h-4 w-4 mr-2" />
-          নতুন খামার যোগ করুন
+          নতুন জমি যোগ করুন
         </Button>
       </div>
 
@@ -66,7 +66,7 @@ export function FarmManagement() {
               <MapPin className="h-5 w-5 text-green-700" />
             </div>
             <div>
-              <p className="text-xs text-green-700 font-medium">মোট খামার</p>
+              <p className="text-xs text-green-700 font-medium">মোট জমি</p>
               <p className="text-xl font-bold text-green-900">{toBengaliNum(totalFarms)}</p>
             </div>
           </CardContent>

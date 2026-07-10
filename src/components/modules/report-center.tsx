@@ -30,8 +30,8 @@ const reportCategories: ReportCategory[] = [
   },
   {
     id: 'farm',
-    title: 'খামার প্রতিবেদন',
-    description: 'সকল খামারের ফসলের অবস্থা, আয়-ব্যয় ও উৎপাদন সারসংক্ষেপ।',
+    title: 'জমি প্রতিবেদন',
+    description: 'সকল জমিের ফসলের অবস্থা, আয়-ব্যয় ও উৎপাদন সারসংক্ষেপ।',
     iconColor: 'text-blue-600 dark:text-blue-400',
     iconBg: 'bg-blue-100 dark:bg-blue-900/50',
   },

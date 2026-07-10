@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 
 export type UserRole = 'farmer' | 'officer' | 'lab' | 'expert' | 'upazila' | 'district' | 'admin' | 'gov' | 'super_admin'
-export type AppView = 'landing' | 'dashboard' | 'farm' | 'land-register' | 'soil' | 'soil-health-card' | 'soil-problem' | 'ai-recommend' | 'fertilizer' | 'irrigation' | 'crop' | 'disease' | 'pest' | 'weather' | 'market' | 'calendar' | 'chat' | 'iot' | 'notification' | 'report' | 'gov-dashboard' | 'settings'
+export type AppView = 'landing' | 'dashboard' | 'farm' | 'land-register' | 'soil' | 'soil-health-card' | 'soil-problem' | 'ai-recommend' | 'fertilizer' | 'irrigation' | 'crop' | 'disease' | 'pest' | 'weather' | 'market' | 'calendar' | 'chat' | 'iot' | 'notification' | 'report' | 'gov-dashboard' | 'settings' | 'crop-history' | 'yield-gap' | 'crop-detail' | 'gov-gis' | 'soil-timeline' | 'regional-agri' | 'crop-planning' | 'crop-rotation'
 
 interface AppState {
   currentView: AppView
